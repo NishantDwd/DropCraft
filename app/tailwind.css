@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+/* Enable system-based dark mode with media query fallback */
+html {
+  color-scheme: light;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+/* Tailwind dark mode support */
+body {
+  @apply bg-white text-black dark:bg-gray-950 dark:text-white;
 }
