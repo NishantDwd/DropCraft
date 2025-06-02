@@ -155,6 +155,10 @@ export default function FormBuilder() {
         <FieldEditor />
         <FormPreview />
       </div>
+      {/* Footer */}
+      <footer className="w-full text-center py-3 bg-white/80 dark:bg-gray-900/80 border-t text-gray-600 dark:text-gray-400 text-sm">
+        &copy; {new Date().getFullYear()} Made by: Nishant. All rights reserved.
+      </footer>
     </div>
   );
 }
